@@ -23,4 +23,4 @@ vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<cr>")
 vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<cr>")
 
 -- File Tree
-vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<cr>")
+vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<cr>")

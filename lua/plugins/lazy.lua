@@ -25,18 +25,18 @@ local plugins = {
 	  'nvim-telescope/telescope.nvim', branch = '0.1.x', 
 	  dependencies = { 'nvim-lua/plenary.nvim' } 
   },
-  -- File tree
-  { 
-    'nvim-tree/nvim-tree.lua',
-    version = "*",
-    lazy = false,
-    requires = {
-      'nvim-tree/nvim-web-devicons',
-    },
-    config = function()
-      require("nvim-tree").setup {}
-    end,
+
+-- Neo Tree
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+    }
   },
+
   -- Visualise buffers as tabs
   {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
