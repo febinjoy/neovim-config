@@ -82,13 +82,3 @@ vim.cmd.colorscheme 'catppuccin'
 -- bufferline
 require('bufferline').setup{}
 
--- Tree Sitter
--- local treesitterconfig = require("nvim-treesitter/nvim-treesitter")
--- treesitterconfig.setup({
---   ensure_installed = {
---     "lua","javascript","c","vim","query","html","go","bash","c_sharp","cpp","csv","dockerfile","gitignore","java","json","make","python","sql","typescript","xml","yaml"
---   },
---   sync_install = false,
---   highlight = { enable = true },
---   indent = { enable = true }
--- })
