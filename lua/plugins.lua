@@ -1,10 +1,5 @@
 return {
-
-
-  -- Visualise buffers as tabs
-  {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
-
-  -- Comment code
+-- Comment code
   {
     'terrortylor/nvim-comment',
     config = function()
