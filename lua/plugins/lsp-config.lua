@@ -22,6 +22,7 @@ return {
           "html",
           "lemminx", -- XML
           "graphql",
+          "csharp_ls",
         }
       })
     end
@@ -57,6 +58,7 @@ return {
       })
       lspconfig.lemminx.setup({})
       lspconfig.graphql.setup({})
+      lspconfig.csharp_ls.setup({})
     end
   }
 }
