@@ -13,6 +13,8 @@ return {
           "lua_ls",
           "pyright",
           "ts_ls",
+          "sqlls",
+          "bashls",
         }
       })
     end
@@ -22,8 +24,10 @@ return {
     config = function()
       local lspconfig = require('lspconfig')
       lspconfig.lua_ls.setup({})
-      lspconfig.pyright.setup {}
-      lspconfig.ts_ls.setup {}
+      lspconfig.pyright.setup ({})
+      lspconfig.ts_ls.setup ({})
+      lspconfig.sqlls.setup({})
+      lspconfig.bashls.setup({})
     end
   }
 }
