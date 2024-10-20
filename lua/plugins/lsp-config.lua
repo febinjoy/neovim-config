@@ -16,6 +16,7 @@ return {
           "sqlls",
           "bashls",
           "gopls",
+          "docker_compose_language_service",
         }
       })
     end
@@ -30,6 +31,7 @@ return {
       lspconfig.sqlls.setup({})
       lspconfig.bashls.setup({})
       lspconfig.gopls.setup({})
+      lspconfig.docker_compose_language_service.setup({})
     end
   }
 }
