@@ -24,3 +24,7 @@ vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<cr>")
 
 -- File Tree
 vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<cr>")
+
+-- LSP Config Key Maps
+
+vim.keymap.set("n", "K", vim.lsp.buf.hover,{})
