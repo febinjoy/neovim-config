@@ -26,6 +26,3 @@ local opts = {}
 
 -- lazy.nvim
 require('lazy').setup('plugins', opts)
-
--- bufferline
-require('bufferline').setup{}
