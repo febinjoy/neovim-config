@@ -1,7 +1,7 @@
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2") 
+vim.cmd("set shiftwidth=2")
 vim.cmd("set encoding=utf-8") -- set encoding
 vim.cmd("set nu") -- enable line numbers
 vim.cmd("set relativenumber") -- enable relative line numbers
