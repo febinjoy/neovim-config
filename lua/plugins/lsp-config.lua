@@ -15,6 +15,7 @@ return {
           "ts_ls",
           "sqlls",
           "bashls",
+          "gopls",
         }
       })
     end
@@ -28,6 +29,7 @@ return {
       lspconfig.ts_ls.setup ({})
       lspconfig.sqlls.setup({})
       lspconfig.bashls.setup({})
+      lspconfig.gopls.setup({})
     end
   }
 }
