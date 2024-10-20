@@ -20,6 +20,7 @@ return {
           "jsonls",
           "cssls",
           "html",
+          "lemminx", -- XML
         }
       })
     end
@@ -53,6 +54,7 @@ return {
           capabilities.textDocument.completion.completionItem.snippetSupport = true
         end
       })
+      lspconfig.lemminx.setup({})
     end
   }
 }
