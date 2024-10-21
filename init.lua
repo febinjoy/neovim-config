@@ -26,3 +26,6 @@ local opts = {}
 
 -- lazy.nvim
 require('lazy').setup('plugins', opts)
+
+-- Set colorscheme
+vim.cmd.colorscheme 'catppuccin'
