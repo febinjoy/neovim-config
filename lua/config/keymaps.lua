@@ -9,10 +9,10 @@ vim.keymap.set("n", "<leader>p", ":bp<cr>")
 vim.keymap.set("n", "<leader>x", ":bd<cr>")
 
 -- nvim-comment
-vim.keymap.set({"n", "v"}, "<leader>/", ":CommentToggle<cr>")
+vim.keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<cr>")
 
 -- yank to clipboard
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 
 -- Plugins
 
@@ -27,9 +27,9 @@ vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<cr>")
 
 -- LSP Config Key Maps
 
-vim.keymap.set("n", "K", vim.lsp.buf.hover,{})
-vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
-vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
+vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 
-vim.keymap.set('n', "<leader>gf", vim.lsp.buf.format, {})
+vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
