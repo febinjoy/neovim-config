@@ -13,6 +13,12 @@ vim.keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<cr>")
 
 -- yank to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>Y", [["+yg_]])
+vim.keymap.set({ "n", "v" }, "<leader>yy", [["+yy]])
+
+-- paste from clipboard
+vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
+vim.keymap.set({ "n", "v" }, "<leader>P", [["+P]])
 
 -- Plugins
 
