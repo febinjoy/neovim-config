@@ -16,8 +16,6 @@ return {
 					"sqlls",
 					"bashls",
 					"gopls",
-					"docker_compose_language_service",
-					"jsonls",
 					"cssls",
 					"html",
 					"lemminx", -- XML
@@ -37,13 +35,6 @@ return {
 			lspconfig.sqlls.setup({})
 			lspconfig.bashls.setup({})
 			lspconfig.gopls.setup({})
-			lspconfig.docker_compose_language_service.setup({})
-			lspconfig.jsonls.setup({
-				capabilities = function()
-					local capabilities = vim.lsp.protocol.make_client_capabilities()
-					capabilities.textDocument.completion.completionItem.snippetSupport = true
-				end,
-			})
 			lspconfig.cssls.setup({
 				capabilities = function()
 					local capabilities = vim.lsp.protocol.make_client_capabilities()
