@@ -25,7 +25,6 @@ return {
 				null_ls.builtins.diagnostics.todo_comments,
 				null_ls.builtins.diagnostics.trail_space,
 				require("none-ls.diagnostics.eslint_d"),
-				-- Refactoring
 			},
 		})
 	end,
