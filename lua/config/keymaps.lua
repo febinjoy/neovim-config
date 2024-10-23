@@ -7,7 +7,7 @@ vim.g.mapleader = " "
 vim.keymap.set(
   "n",
   "<leader>imd",
-  ":MasonInstall stylua prettier pylint black isort codespell eslint_d shellcheck write-good revive<cr>"
+  ":MasonInstall stylua prettier pylint black isort pylint codespell eslint_d shellcheck write-good revive<cr>"
 )
 
 -- Buffers
