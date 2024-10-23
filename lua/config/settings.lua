@@ -14,3 +14,5 @@ vim.cmd("set incsearch") -- incrementally highlight searches as you type
 vim.cmd("set termguicolors") -- minimum number of lines to keep above and below the cursor
 vim.cmd("set scrolloff=8") -- minimum number of lines to keep above and below the cursor
 vim.cmd("set sidescrolloff=8") -- minimum number of columns to keep above and below the cursor
+
+vim.opt.swapfile = false
