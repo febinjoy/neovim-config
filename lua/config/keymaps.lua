@@ -32,6 +32,10 @@ vim.keymap.set("n", "<leader><leader>", ":Telescope oldfiles<cr>")
 vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<cr>")
 vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<cr>")
 
+-- Git
+vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
+vim.keymap.set("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", {})
+
 -- LSP Config Key Maps
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {})
