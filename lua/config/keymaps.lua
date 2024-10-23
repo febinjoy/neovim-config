@@ -3,13 +3,13 @@
 -- Space bar as leader key
 vim.g.mapleader = " "
 
--- buffers
-vim.keymap.set("n", "<leader>n", ":bn<cr>")
-vim.keymap.set("n", "<leader>p", ":bp<cr>")
-vim.keymap.set("n", "<leader>x", ":bd<cr>")
+-- Buffers
+vim.keymap.set("n", "<leader>n", ":bn<cr>") -- Next buffer
+vim.keymap.set("n", "<leader>p", ":bp<cr>") -- Previous buffer
+vim.keymap.set("n", "<leader>x", ":bd<cr>") -- Close current buffer
 
 -- nvim-comment
-vim.keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<cr>")
+vim.keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<cr>") -- Comment/Uncomment line
 
 -- yank to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
@@ -29,20 +29,20 @@ vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<cr>")
 vim.keymap.set("n", "<leader><leader>", ":Telescope oldfiles<cr>")
 
 -- File Tree
-vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<cr>")
-vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<cr>")
+vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<cr>") -- Open File tree
+vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<cr>") -- Show all open buffers as a floating window
 
 -- Git
-vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
-vim.keymap.set("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", {})
+vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {}) -- Preview the difference with git in a floating window
+vim.keymap.set("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", {}) -- Toggle display of git blame on each line
 
 -- LSP Config Key Maps
-vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {})
-vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
-vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+vim.keymap.set("n", "K", vim.lsp.buf.hover, {}) -- Hover information lika a tooltip
+vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {}) -- Show declarations
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {}) -- Show definition
+vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {}) -- Show references
+vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {}) -- Code Actions window
+vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {}) -- Format current document
 
 -- Debugging
 vim.keymap.set("n", "<F5>", function()
