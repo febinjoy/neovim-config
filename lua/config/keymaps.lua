@@ -4,7 +4,11 @@
 vim.g.mapleader = " "
 
 -- Install Mason dependencies used
-vim.keymap.set("n", "<leader>imd", ":MasonInstall stylua prettier pylint black isort codespell eslint_d shellcheck write-good revive<cr>")
+vim.keymap.set(
+  "n",
+  "<leader>imd",
+  ":MasonInstall stylua prettier pylint black isort codespell eslint_d shellcheck write-good revive<cr>"
+)
 
 -- Buffers
 vim.keymap.set("n", "<leader>n", ":bn<cr>") -- Next buffer
