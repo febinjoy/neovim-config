@@ -1,3 +1,4 @@
+-- All LSP related config resides here
 return {
   {
     "williamboman/mason.nvim",

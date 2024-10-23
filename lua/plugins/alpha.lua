@@ -1,3 +1,4 @@
+-- Displays the dashboard on startup
 return {
   "goolord/alpha-nvim",
   dependencies = {

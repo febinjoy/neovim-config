@@ -1,3 +1,4 @@
+-- None LS helps simplify creating, sharing and setting up LSP sources
 return {
 	"nvimtools/none-ls.nvim",
 	dependencies = {
@@ -8,23 +9,22 @@ return {
 		null_ls.setup({
 			sources = {
 				-- Formatting
-				null_ls.builtins.formatting.stylua,
+				null_ls.builtins.formatting.stylua, -- Lua
 				null_ls.builtins.formatting.prettier,
-				null_ls.builtins.formatting.black,
-				null_ls.builtins.formatting.isort,
-        null_ls.builtins.formatting.htmlbeautifier,
+				null_ls.builtins.formatting.black, -- Python
+				null_ls.builtins.formatting.isort, -- Sort imports in Python
 				-- Diagnostics
-				null_ls.builtins.diagnostics.write_good,
+				null_ls.builtins.diagnostics.write_good, -- Checks the text for spelling and grammatical errors
 				null_ls.builtins.diagnostics.pylint.with({
 					diagnostics_postprocess = function(diagnostic)
 						diagnostic.code = diagnostic.message_id
 					end,
-				}),
-				null_ls.builtins.diagnostics.revive,
-				null_ls.builtins.diagnostics.codespell,
-				null_ls.builtins.diagnostics.todo_comments,
-				null_ls.builtins.diagnostics.trail_space,
-				require("none-ls.diagnostics.eslint_d"),
+				}), -- Python linter
+				null_ls.builtins.diagnostics.revive, -- Linter for golang
+				null_ls.builtins.diagnostics.codespell, -- Checks misspelled words in source code
+				null_ls.builtins.diagnostics.todo_comments, -- Highlights TODO
+				null_ls.builtins.diagnostics.trail_space, -- Highlights trailing space
+				require("none-ls.diagnostics.eslint_d"), -- eslint
 			},
 		})
 	end,

@@ -1,3 +1,4 @@
+-- Debuggers
 return {
   "mfussenegger/nvim-dap",
   dependencies = {
@@ -10,7 +11,6 @@ return {
     local dapui = require("dapui")
     local dapgo = require("dap-go")
 
-    -- dap.setup()
     dapui.setup()
     dapgo.setup()
 
